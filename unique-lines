@@ -1,0 +1,23 @@
+#!/bin/sh
+set -euf -o pipefail
+
+##
+# Show unique lines i.e. filter out any duplicate lines.
+#
+# This implementation uses the command `awk` to do the filtering.
+# This finds duplicate lines without the need to sort all the lines.
+#
+# Example using a file:
+#
+#     unique-lines myfile.txt
+#
+# Example using a stream:
+#
+#     cat myfile.txt unique-lines
+#
+# Contact: Joel Parker Henderson (joel@joelparkerhenderson.com)
+# License: GPL
+# Updated: 2015-01-25
+##
+
+awk '!x[$0]++'
