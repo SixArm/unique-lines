@@ -13,7 +13,7 @@ set -euf -o pipefail
 #
 # Example using a stream:
 #
-#     cat myfile.txt unique-lines
+#     cat myfile.txt | unique-lines
 #
 # Contact: Joel Parker Henderson (joel@joelparkerhenderson.com)
 # License: GPL
